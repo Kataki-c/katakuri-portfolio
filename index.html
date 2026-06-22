@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KATAKURI - Профессиональный видеомонтажер">
+    <title>KATAKURI | Видеомонтажер</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">KATAKURI</div>
+            
+            <button class="burger-btn" id="burger-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="nav-menu">
+                <a href="#" class="nav-link active" data-target="home">Главная</a>
+                <a href="#" class="nav-link" data-target="about">Обо мне</a>
+                <a href="#" class="nav-link" data-target="portfolio">Портфолио</a>
+                <a href="#" class="nav-link" data-target="services">Услуги</a>
+                <a href="#" class="nav-link" data-target="contact">Контакты</a>
+            </nav>
+        </div>
+        <div class="glow-line" style="margin: 0;"></div>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- ГЛАВНАЯ СТРАНИЦА -->
+        <section id="home" class="page-section active hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="container hero">
+                <h1 class="hero-title reveal">KATAKURI</h1>
+                <p class="hero-subtitle reveal delay-1">Видеомонтажер и Создатель Контента</p>
+                <button class="btn-primary reveal delay-2" id="btn-explore">СМОТРЕТЬ РАБОТЫ</button>
+                <div class="scroll-down">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОБО МНЕ -->
+        <section id="about" class="page-section">
+            <div class="container">
+                <div class="about-grid">
+                    
+                    <!-- Фото на градиенте -->
+                    <div class="about-image-wrapper">
+                        <img src="png-klev-club-creg-p-leonardo-da-vinchi-png-2-removebg-preview.png" alt="Фото">
+                    </div>
+                    
+                    <div class="about-text-box">
+                        <h2 class="section-title-custom">Обо мне</h2>
+                        <div class="header-line"></div>
+                        <p>Я увлеченный видеомонтажер с острым взглядом на детали и рассказывание историй. Специализируюсь на создании захватывающих визуальных повествований, которые вовлекают и вдохновляют аудиторию.</p>
+                        <p>Имея многолетний опыт в видеопроизводстве, я превращаю сырой материал в отполированный контент, который находит отклик у зрителей на всех платформах.</p>
+                        <p>От короткого контента для социальных сетей до кинематографических проектов, я привношу креативность и технический опыт в каждый проект.</p>
+                    </div>
+                </div>
+
+                <!-- НАВЫКИ с прогресс-барами -->
+                <div class="skills-section">
+                    <h2 class="section-title-custom" style="text-align: center;">Навыки</h2>
+                    <div class="header-line" style="margin: 10px auto 40px auto;"></div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-row">
+                            <div class="skill-top"><span>Adobe Premiere Pro</span><span>75%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-top"><span>Adobe After Effects</span><span>88%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-top"><span>DaVinci Resolve</span><span>70%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-top"><span>Adobe Photoshop</span><span>66%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="66%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-top"><span>Kling ai</span><span>60%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ПОРТФОЛИО -->
+        <section id="portfolio" class="page-section">
+            <div class="container">
+                <h2 class="section-title reveal">Портфолио</h2>
+                <div class="title-line center reveal"></div>
+                
+                <div class="portfolio-filters reveal">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="reels">Reels</button>
+                    <button class="filter-btn" data-filter="horizontal">Горизонтальные</button>
+                    <button class="filter-btn" data-filter="gaming">Игровые</button>
+                    <button class="filter-btn" data-filter="travel">Путешествие</button>
+                </div>
+
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <div class="portfolio-card reveal" data-category="gaming horizontal">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="portfolio">
+                        <div class="card-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="portfolio-card reveal delay-1" data-category="gaming horizontal">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="portfolio">
+                        <div class="card-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="portfolio-card reveal delay-2" data-category="travel horizontal">
+                        <img src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="portfolio">
+                        <div class="card-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="portfolio-card reveal" data-category="horizontal">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="portfolio">
+                        <div class="card-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="portfolio-card reveal delay-1" data-category="reels horizontal">
+                        <img src="https://images.unsplash.com/photo-1586899028174-e7098604235b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="portfolio">
+                        <div class="card-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <div class="portfolio-card reveal delay-2" data-category="travel horizontal">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="portfolio">
+                        <div class="card-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- УСЛУГИ -->
+        <section id="services" class="page-section">
+            <div class="container">
+                <h2 class="section-title reveal">Услуги</h2>
+                <div class="title-line center reveal"></div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <i class="fa-solid fa-film service-icon"></i>
+                        <h3>Видеомонтаж</h3>
+                        <p>Профессиональный монтаж для всех типов видео — от коротких клипов до полноценных проектов.</p>
+                    </div>
+                    <div class="service-card reveal delay-1">
+                        <i class="fa-solid fa-scissors service-icon"></i>
+                        <h3>Цветокоррекция</h3>
+                        <p>Улучшите свои кадры с помощью профессиональной цветокоррекции и кинематографического грейдинга.</p>
+                    </div>
+                    <div class="service-card reveal delay-2">
+                        <i class="fa-solid fa-palette service-icon"></i>
+                        <h3>Моушн-дизайн</h3>
+                        <p>Динамичная анимация и графика, чтобы вывести ваш видеоконтент на новый уровень.</p>
+                    </div>
+                    <div class="service-card reveal delay-3">
+                        <i class="fa-solid fa-bolt service-icon"></i>
+                        <h3>Быстрая обработка</h3>
+                        <p>Оперативная сдача проектов без потери качества для срочных задач и дедлайнов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <h2 class="section-title reveal">Контакты</h2>
+                <div class="title-line center reveal"></div>
+                <p class="contact-subtitle reveal">Давайте создадим что-то потрясающее вместе</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <h3>Связаться со мной</h3>
+                        <div class="info-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>gojosatoru151@gmail.com</p>
+                        </div>
+                        
+                        <h3 class="socials-title">Подписывайтесь в социальных сетях:</h3>
+                        <div class="social-squares">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form reveal delay-1" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Ваш Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="6" placeholder="Ваше сообщение" required></textarea>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="agreement" required>
+                            <label for="agreement">Даю согласие на обработку персональных данных</label>
+                        </div>
+                        <button type="submit" class="btn-primary form-btn">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="footer-divider"></div>
+    
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h3 class="logo">KATAKURI</h3>
+                <p class="footer-desc">Профессиональный видеомонтаж<br>для вашего бизнеса и творческих проектов</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Навигация</h4>
+                <a href="#" class="nav-link-footer" data-target="home">Главная</a>
+                <a href="#" class="nav-link-footer" data-target="about">Обо мне</a>
+                <a href="#" class="nav-link-footer" data-target="portfolio">Портфолио</a>
+                <a href="#" class="nav-link-footer" data-target="services">Услуги</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p>+375295102853</p>
+                <p>gojosatoru151@gmail.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Социальные сети</h4>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-viber"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
