@@ -565,4 +565,9 @@ ul { list-style: none; }
     .about-grid {
         grid-template-columns: 1fr;
     }
+    .hero-bg {
+    background: url('1.png') center/cover no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
 }
