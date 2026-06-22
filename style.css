@@ -151,9 +151,9 @@ ul { list-style: none; }
 
 /* ========== ГЛАВНАЯ (Hero) ========== */
 .hero-bg {
+    background: url('https://raw.githubusercontent.com/Kataki-c/katakuri-portfolio/main/1.png') center/cover no-repeat;
+    min-height: 100vh;
     position: relative;
-    background: url('1.png') no-repeat center center/cover;
-    padding: 0;
 }
 }
 .hero-overlay {
